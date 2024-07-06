@@ -147,7 +147,7 @@ alert ("You took from your shet " + m )
         alert ("go home") 
     }
   
-
+let a = "s"
     
 
 
