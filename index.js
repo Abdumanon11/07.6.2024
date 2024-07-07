@@ -124,30 +124,24 @@ alert("Welcome " + capitalized );
 
 
 
-let name = prompt("what's your name")
-if (name  === "Alex") {
-    alert ("welcome " + name)
-    let num = prompt("Уour password")
-    if (num === "7777" ){
-        alert ("Correct password" )
-    }else{
-        alert("wrong password")
-    }
-    let m = prompt("How much money do you want?")
+let name = prompt("What's your name?");
 
-    if (m >= 1000 && m <= 10000){
-
-alert ("You took from your shet " + m )
-}else{
-      alert ("not enough money")
+if (name === "Alex") {
+  let password = prompt("Enter your password:");
+  if (password === "7777") {
     
+    let amount = parseFloat(prompt("How much money do you want to withdraw?"));
+    if (amount >= 1000 && amount <= 10000) {
+      alert(`You withdrew ${amount} from your account.`);
+    } else {
+      alert("Invalid withdrawal amount. Please try again.");
     }
-    
-    }else {
-        alert ("go home") 
-    }
-  
-let a = "s"
+  } else {
+    alert("Incorrect password. Please try again.");
+  }
+} else {
+  alert("Access denied. Please try again.");
+}let a = "s"
     
 
 
