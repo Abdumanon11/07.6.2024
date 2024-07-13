@@ -1,14 +1,19 @@
 
 
 
+let arr = [4, 16, 19, 22, 11, 144, 967, 19124];
+let even = [];
+let odd = [];
 
-let arr = ['Aleksey', 'Kartoshka', 'Margarita', 'Morgenshtern', 'Monica'];
-
-let index = parseInt(prompt("Enter an index: "));
-
-if (index >= 0 && index < arr.length) {
-  arr.splice(index, 1);
-  console.log(`Element at index ${index} removed. New array: ${arr}`);
-} else {
-  console.log(`Element at index ${index} does not exist.`);
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    even.push(arr[i]);
+  } else {
+    odd.push(arr[i]);
+  }
 }
+
+console.log('Четные числа:', even);
+console.log('Нечетные числа:', odd);
+
+
